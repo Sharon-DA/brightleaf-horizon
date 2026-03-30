@@ -32,7 +32,7 @@ export default function RootLayout({
         <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm transition-all duration-300">
           <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition">
-              <img src="/blh-logo.png" alt="BrightLeaf Horizon" className="h-16 w-auto" />
+              <img src="/blh-logo.jpeg" alt="BrightLeaf Horizon" className="h-16 w-auto" />
               <div>
                 <h1 className="text-xl font-bold text-slate-900">BrightLeaf</h1>
                 <p className="text-xs text-amber-600 font-semibold">HORIZON</p>
