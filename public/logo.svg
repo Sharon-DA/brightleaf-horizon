@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Dark Navy Background -->
+  <rect width="400" height="120" fill="#1F3A5C"/>
+  
+  <!-- "B" in White -->
+  <text x="20" y="85" font-family="Georgia, serif" font-size="90" font-weight="bold" fill="white">B</text>
+  
+  <!-- "L" in muted gold/bronze -->
+  <text x="130" y="85" font-family="Georgia, serif" font-size="90" font-weight="bold" fill="#C9A961">L</text>
+  
+  <!-- "H" in muted gold/bronze -->
+  <text x="225" y="85" font-family="Georgia, serif" font-size="90" font-weight="bold" fill="#C9A961">H</text>
+</svg>
