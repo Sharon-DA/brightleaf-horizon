@@ -89,12 +89,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case Studies Section - UPDATED WITH REAL COMPANIES */}
-      <section id="cases" className="py-24 px-6 bg-white">
+      {/* Case Studies Section */}
+      <section id="cases" className="py-24 px-6 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-amber-600 font-semibold uppercase tracking-widest mb-4">Market Impact</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Real Results for Growing Enterprises</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Real Results for Growing Enterprises</h2>
             <p className="text-xl text-gray-600 italic max-w-2xl mx-auto">Specializing in high-growth companies (50-100 employees) and global funds.</p>
           </div>
 
@@ -124,21 +124,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-24 px-6 bg-slate-900 text-white">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Start Your Strategy Conversation</h2>
-          <p className="text-xl text-gray-300">Share your vision, and let's explore how we can accelerate your growth.</p>
-        </div>
-        <div className="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-            <input {...register("name", { required: true })} placeholder="Your Name" className="w-full border p-4 rounded-lg text-gray-900 focus:border-amber-500 outline-none" />
-            <input {...register("email", { required: true })} type="email" placeholder="Email Address" className="w-full border p-4 rounded-lg text-gray-900 focus:border-amber-500 outline-none" />
-            <textarea {...register("message", { required: true })} placeholder="Growth objectives..." className="w-full border p-4 rounded-lg text-gray-900 focus:border-amber-500 outline-none" rows={4} />
-            <button type="submit" className="w-full bg-amber-600 text-white py-4 rounded-lg hover:bg-amber-700 transition font-bold text-lg">
-              Schedule Consultation
-            </button>
-          </form>
+      {/* Contact Section - UPDATED WITH SIDE PANEL */}
+      <section id="contact" className="py-24 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16">
+            {/* Contact Info Panel */}
+            <div className="animate-fade-in">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900">Start Your Strategy Conversation</h2>
+              <p className="text-lg text-gray-600 mb-8">
+                Ready to transform your brand? Visit us in Denver or reach out online to schedule your complimentary strategy call.
+              </p>
+              
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl">📍</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Our Office</h4>
+                    <p className="text-gray-600">1801 California St, Denver, CO 80202</p>
+                    <p className="text-gray-600">United States</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl">🕒</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Business Hours</h4>
+                    <p className="text-gray-600">Mon-Fri: 10am – 5pm</p>
+                    <p className="text-gray-600">Sat: 1pm – 5pm</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl">📞</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-lg">Direct Contact</h4>
+                    <p className="text-gray-600">303-521-6710</p>
+                    <p className="text-amber-600 font-medium">brightleafhealth@brightleafh.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-slate-50 p-8 rounded-2xl border border-gray-100 shadow-sm">
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">Send us a message</h3>
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                <div>
+                  <input 
+                    {...register("name", { required: true })} 
+                    placeholder="Your Name" 
+                    className="w-full p-4 rounded-lg border border-gray-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-white text-gray-900" 
+                  />
+                </div>
+                <div>
+                  <input 
+                    {...register("email", { required: true })} 
+                    type="email" 
+                    placeholder="Email Address" 
+                    className="w-full p-4 rounded-lg border border-gray-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-white text-gray-900" 
+                  />
+                </div>
+                <div>
+                  <textarea 
+                    {...register("message", { required: true })} 
+                    placeholder="Tell us about your brand growth objectives..." 
+                    className="w-full p-4 rounded-lg border border-gray-200 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition bg-white text-gray-900" 
+                    rows={5} 
+                  />
+                </div>
+                <button 
+                  type="submit"
+                  className="w-full bg-slate-900 text-white py-4 rounded-lg font-bold hover:bg-slate-800 transition shadow-lg hover:shadow-xl active:scale-[0.98]"
+                >
+                  Schedule Consultation
+                </button>
+              </form>
+              <div className="mt-6 grid grid-cols-2 gap-4 text-center text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+                <div className="flex flex-col">
+                  <span>Response Time</span>
+                  <span className="text-slate-600 tracking-normal mt-1">Within 24 Hours</span>
+                </div>
+                <div className="flex flex-col">
+                  <span>Confidentiality</span>
+                  <span className="text-slate-600 tracking-normal mt-1">100% NDA Protected</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

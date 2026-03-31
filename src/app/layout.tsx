@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import './globals.css';
 import React from 'react';
 import Link from 'next/link';
@@ -76,31 +75,47 @@ export default function RootLayout({
                 <h3 className="text-white font-bold text-lg mb-4">BrightLeaf Horizon</h3>
                 <p className="text-sm leading-relaxed">Strategic growth partners for visionary brands. We translate market insights into compelling narratives that drive measurable impact.</p>
               </div>
-              <div>
-                <h4 className="text-white font-semibold mb-4">Services</h4>
-                <ul className="space-y-2 text-sm">
-                  <li><Link href="/#services" className="hover:text-amber-400 transition">Brand Strategy</Link></li>
-                  <li><Link href="/#services" className="hover:text-amber-400 transition">Creative Storytelling</Link></li>
-                  <li><Link href="/#services" className="hover:text-amber-400 transition">Digital Marketing</Link></li>
-                </ul>
-              </div>
+              
               <div>
                 <h4 className="text-white font-semibold mb-4">Company</h4>
                 <ul className="space-y-2 text-sm">
                   <li><Link href="/about" className="hover:text-amber-400 transition">About Us</Link></li>
+                  <li><Link href="/#services" className="hover:text-amber-400 transition">Services</Link></li>
                   <li><Link href="/#cases" className="hover:text-amber-400 transition">Case Studies</Link></li>
                   <li><Link href="/#contact" className="hover:text-amber-400 transition">Contact</Link></li>
                 </ul>
               </div>
+
               <div>
                 <h4 className="text-white font-semibold mb-4">Connect</h4>
-                <ul className="space-y-2 text-sm">
-                  <li><a href="#" className="hover:text-amber-400 transition">LinkedIn</a></li>
-                  <li><a href="#" className="hover:text-amber-400 transition">Twitter</a></li>
-                  <li><a href="mailto:hello@brightleaf.com" className="hover:text-amber-400 transition">Email</a></li>
+                <ul className="space-y-3 text-sm">
+                  <li className="flex items-center gap-2">
+                    <span className="text-amber-500">📞</span>
+                    <a href="tel:3035216710" className="hover:text-amber-400 transition">303-521-6710</a>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-amber-500">✉️</span>
+                    <a href="mailto:brightleafhealth@brightleafh.com" className="hover:text-amber-400 transition break-all">brightleafhealth@brightleafh.com</a>
+                  </li>
+                  <li className="pt-2 border-t border-gray-800 mt-2">
+                    <p className="text-gray-400 font-semibold mb-1 uppercase text-[10px] tracking-widest">Business Hours</p>
+                    <p className="text-xs">Mon-Fri: 10am – 5pm</p>
+                    <p className="text-xs">Sat: 1pm – 5pm</p>
+                  </li>
                 </ul>
               </div>
+
+              <div>
+                <h4 className="text-white font-semibold mb-4">Location</h4>
+                <div className="text-sm space-y-1 text-gray-400">
+                  <p className="text-white font-medium">Denver Office</p>
+                  <p>1801 California St,</p>
+                  <p>Denver, CO 80202,</p>
+                  <p>United States</p>
+                </div>
+              </div>
             </div>
+            
             <div className="pt-8 border-t border-gray-700 text-sm text-center">
               <p>&copy; 2026 BrightLeaf Horizon. All rights reserved.</p>
             </div>
