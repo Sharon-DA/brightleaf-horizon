@@ -41,10 +41,11 @@ export default function RootLayout({
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#services" className="text-gray-700 hover:text-amber-600 transition font-medium">Services</Link>
-              <Link href="#cases" className="text-gray-700 hover:text-amber-600 transition font-medium">Case Studies</Link>
-              <Link href="#testimonials" className="text-gray-700 hover:text-amber-600 transition font-medium">Testimonials</Link>
-              <Link href="#contact" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium">Contact</Link>
+              <Link href="/" className="text-gray-700 hover:text-amber-600 transition font-medium">Home</Link>
+              <Link href="/about" className="text-gray-700 hover:text-amber-600 transition font-medium">About Us</Link>
+              <Link href="/#services" className="text-gray-700 hover:text-amber-600 transition font-medium">Services</Link>
+              <Link href="/#cases" className="text-gray-700 hover:text-amber-600 transition font-medium">Case Studies</Link>
+              <Link href="/#contact" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium">Contact</Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -57,14 +58,14 @@ export default function RootLayout({
 
           {/* Mobile Menu */}
           <nav id="mobile-menu" className="hidden md:hidden bg-white border-t border-gray-200 py-4 px-6 space-y-3 animate-in fade-in">
-            <Link href="#services" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Services</Link>
-            <Link href="#cases" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Case Studies</Link>
-            <Link href="#testimonials" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Testimonials</Link>
-            <Link href="#contact" className="block bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium text-center">Contact</Link>
+            <Link href="/" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Home</Link>
+            <Link href="/about" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">About Us</Link>
+            <Link href="/#services" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Services</Link>
+            <Link href="/#contact" className="block bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium text-center">Contact</Link>
           </nav>
         </header>
 
-        {/* Main Content - Add padding to account for fixed header */}
+        {/* Main Content */}
         <main className="pt-20">{children}</main>
 
         {/* Footer */}
@@ -78,17 +79,17 @@ export default function RootLayout({
               <div>
                 <h4 className="text-white font-semibold mb-4">Services</h4>
                 <ul className="space-y-2 text-sm">
-                  <li><a href="#services" className="hover:text-amber-400 transition">Brand Strategy</a></li>
-                  <li><a href="#services" className="hover:text-amber-400 transition">Creative Storytelling</a></li>
-                  <li><a href="#services" className="hover:text-amber-400 transition">Digital Marketing</a></li>
+                  <li><Link href="/#services" className="hover:text-amber-400 transition">Brand Strategy</Link></li>
+                  <li><Link href="/#services" className="hover:text-amber-400 transition">Creative Storytelling</Link></li>
+                  <li><Link href="/#services" className="hover:text-amber-400 transition">Digital Marketing</Link></li>
                 </ul>
               </div>
               <div>
                 <h4 className="text-white font-semibold mb-4">Company</h4>
                 <ul className="space-y-2 text-sm">
-                  <li><a href="#cases" className="hover:text-amber-400 transition">Case Studies</a></li>
-                  <li><a href="#testimonials" className="hover:text-amber-400 transition">Testimonials</a></li>
-                  <li><a href="#contact" className="hover:text-amber-400 transition">Contact</a></li>
+                  <li><Link href="/about" className="hover:text-amber-400 transition">About Us</Link></li>
+                  <li><Link href="/#cases" className="hover:text-amber-400 transition">Case Studies</Link></li>
+                  <li><Link href="/#contact" className="hover:text-amber-400 transition">Contact</Link></li>
                 </ul>
               </div>
               <div>
@@ -115,7 +116,6 @@ export default function RootLayout({
               menuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
               });
-              // Close menu when a link is clicked
               mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                   mobileMenu.classList.add('hidden');
