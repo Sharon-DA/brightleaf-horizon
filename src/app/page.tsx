@@ -78,13 +78,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section - UPDATED FOR 2024 FOUNDING */}
       <section className="py-16 px-6 bg-slate-50 border-b border-gray-200">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 text-center font-bold">
-            <div><p className="text-4xl text-amber-600 mb-2">15+</p><p className="text-gray-700 font-normal">Years of Excellence</p></div>
-            <div><p className="text-4xl text-amber-600 mb-2">200+</p><p className="text-gray-700 font-normal">Brands Transformed</p></div>
-            <div><p className="text-4xl text-amber-600 mb-2">$500M+</p><p className="text-gray-700 font-normal">Revenue Generated</p></div>
+            <div><p className="text-4xl text-amber-600 mb-2">2+</p><p className="text-gray-700 font-normal tracking-tight">Years of Rapid Impact</p></div>
+            <div><p className="text-4xl text-amber-600 mb-2">50+</p><p className="text-gray-700 font-normal tracking-tight">Growth Partnerships</p></div>
+            <div><p className="text-4xl text-amber-600 mb-2">$50M+</p><p className="text-gray-700 font-normal tracking-tight">Client Capital Secured</p></div>
           </div>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-amber-600 font-semibold uppercase tracking-widest mb-4">Market Impact</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Real Results for Growing Enterprises</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 tracking-tight">Real Results for Growing Enterprises</h2>
             <p className="text-xl text-gray-600 italic max-w-2xl mx-auto">Specializing in high-growth companies (50-100 employees) and global funds.</p>
           </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
                   </span>
                 </div>
                 <span className="text-amber-600 font-bold text-xs uppercase tracking-widest mb-2">{item.category}</span>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">{item.title}</h3>
                 <p className="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">{item.description}</p>
                 
                 <div className="space-y-3 pt-6 border-t border-slate-100">
@@ -124,29 +124,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section - UPDATED WITH SIDE PANEL */}
+      {/* Contact Section - FINAL POLISHED VERSION */}
       <section id="contact" className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16">
             {/* Contact Info Panel */}
             <div className="animate-fade-in">
-              <h2 className="text-4xl font-bold mb-6 text-slate-900">Start Your Strategy Conversation</h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <h2 className="text-4xl font-bold mb-6 text-slate-900 tracking-tight">Start Your Strategy Conversation</h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Ready to transform your brand? Visit us in Denver or reach out online to schedule your complimentary strategy call.
               </p>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl">📍</div>
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl shadow-sm">📍</div>
                   <div>
                     <h4 className="font-bold text-slate-900 text-lg">Our Office</h4>
-                    <p className="text-gray-600">1801 California St, Denver, CO 80202</p>
+                    <p className="text-gray-600 leading-snug">1801 California St, Denver, CO 80202</p>
                     <p className="text-gray-600">United States</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl">🕒</div>
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl shadow-sm">🕒</div>
                   <div>
                     <h4 className="font-bold text-slate-900 text-lg">Business Hours</h4>
                     <p className="text-gray-600">Mon-Fri: 10am – 5pm</p>
@@ -155,19 +155,19 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl">📞</div>
+                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600 shrink-0 text-xl shadow-sm">📞</div>
                   <div>
                     <h4 className="font-bold text-slate-900 text-lg">Direct Contact</h4>
                     <p className="text-gray-600">303-521-6710</p>
-                    <p className="text-amber-600 font-medium">brightleafhealth@brightleafh.com</p>
+                    <p className="text-amber-600 font-medium break-all">brightleafhealth@brightleafh.com</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-slate-50 p-8 rounded-2xl border border-gray-100 shadow-sm">
-              <h3 className="text-2xl font-bold mb-6 text-slate-900">Send us a message</h3>
+            {/* Contact Form Container */}
+            <div className="bg-slate-50 p-8 rounded-2xl border border-gray-100 shadow-sm transition-all hover:shadow-md">
+              <h3 className="text-2xl font-bold mb-6 text-slate-900 tracking-tight">Send us a message</h3>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div>
                   <input 

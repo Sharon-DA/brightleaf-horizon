@@ -1,3 +1,4 @@
+// src/app/layout.tsx
 import './globals.css';
 import React from 'react';
 import Link from 'next/link';
@@ -64,7 +65,6 @@ export default function RootLayout({
           </nav>
         </header>
 
-        {/* Main Content */}
         <main className="pt-20">{children}</main>
 
         {/* Footer */}
@@ -73,7 +73,7 @@ export default function RootLayout({
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="text-white font-bold text-lg mb-4">BrightLeaf Horizon</h3>
-                <p className="text-sm leading-relaxed">Strategic growth partners for visionary brands. We translate market insights into compelling narratives that drive measurable impact.</p>
+                <p className="text-sm leading-relaxed">Strategic growth partners for visionary brands. Since 2024, we have translated market insights into compelling narratives that drive measurable impact.</p>
               </div>
               
               <div>
@@ -90,11 +90,11 @@ export default function RootLayout({
                 <h4 className="text-white font-semibold mb-4">Connect</h4>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-center gap-2">
-                    <span className="text-amber-500">📞</span>
+                    <span className="text-amber-500 text-lg">📞</span>
                     <a href="tel:3035216710" className="hover:text-amber-400 transition">303-521-6710</a>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-amber-500">✉️</span>
+                    <span className="text-amber-500 text-lg">✉️</span>
                     <a href="mailto:brightleafhealth@brightleafh.com" className="hover:text-amber-400 transition break-all">brightleafhealth@brightleafh.com</a>
                   </li>
                   <li className="pt-2 border-t border-gray-800 mt-2">
@@ -117,12 +117,11 @@ export default function RootLayout({
             </div>
             
             <div className="pt-8 border-t border-gray-700 text-sm text-center">
-              <p>&copy; 2026 BrightLeaf Horizon. All rights reserved.</p>
+              <p>&copy; 2024–2026 BrightLeaf Horizon. All rights reserved.</p>
             </div>
           </div>
         </footer>
 
-        {/* Mobile Menu Toggle Script */}
         <script dangerouslySetInnerHTML={{__html: `
           if (typeof document !== 'undefined') {
             const menuBtn = document.getElementById('mobile-menu-btn');
