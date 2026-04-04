@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Link from "next/link";
 
 type FormData = {
   name: string;
@@ -71,9 +72,11 @@ export default function Home() {
             We translate complex market insights into compelling narratives that move audiences, build authority, and drive measurable growth.
           </p>
           <div className="flex gap-6 flex-wrap justify-center animate-slide-up" style={{animationDelay: '0.4s'}}>
-            <button className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 hover:scale-105 transition font-semibold flex items-center gap-2 group shadow-lg hover:shadow-xl">
-              Book a Strategy Call
-            </button>
+            <Link href="/contact">
+              <button className="bg-amber-600 text-white px-8 py-4 rounded-lg hover:bg-amber-700 hover:scale-105 transition font-semibold flex items-center gap-2 group shadow-lg hover:shadow-xl">
+                Book a Strategy Call
+              </button>
+            </Link>
           </div>
         </div>
       </section>
