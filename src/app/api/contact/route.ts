@@ -130,7 +130,7 @@ export async function POST(request: Request) {
   try {
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: ["kolawoleadetola630@gmail.com"],
+      to: [process.env.EMAIL_SENDER],
       subject: "New Consultation Request",
       replyTo: validatedPayload.email,
       html: buildEmailHtml(validatedPayload),

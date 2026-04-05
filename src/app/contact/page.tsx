@@ -225,7 +225,7 @@ const ContactPage = () => {
                     setPhone(value || "");
                     if (value) setPhoneError("");
                   }}
-                  className="w-full border border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-slate-900 outline-none transition"
+                  className="w-full border text-slate-900 border-gray-200 rounded-lg p-3 focus:ring-2 focus:ring-slate-900 outline-none transition"
                 />
 
                 {phoneError && (
