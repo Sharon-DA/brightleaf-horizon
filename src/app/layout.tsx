@@ -45,7 +45,7 @@ export default function RootLayout({
               <Link href="/about" className="text-gray-700 hover:text-amber-600 transition font-medium">About Us</Link>
               <Link href="/#services" className="text-gray-700 hover:text-amber-600 transition font-medium">Services</Link>
               <Link href="/#cases" className="text-gray-700 hover:text-amber-600 transition font-medium">Case Studies</Link>
-              <Link href="/#contact" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium">Contact</Link>
+              <Link href="/contact" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium">Contact</Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -82,7 +82,7 @@ export default function RootLayout({
                   <li><Link href="/about" className="hover:text-amber-400 transition">About Us</Link></li>
                   <li><Link href="/#services" className="hover:text-amber-400 transition">Services</Link></li>
                   <li><Link href="/#cases" className="hover:text-amber-400 transition">Case Studies</Link></li>
-                  <li><Link href="/#contact" className="hover:text-amber-400 transition">Contact</Link></li>
+                  <li><Link href="/contact" className="hover:text-amber-400 transition">Contact</Link></li>
                 </ul>
               </div>
 
