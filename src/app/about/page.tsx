@@ -1,63 +1,28 @@
-import React from 'react';
-import Link from 'next/link';
-
-const experts = [
-  {
-    name: "Atalia",
-    quote: "We see beyond data points and trends - we connect dots between industries, behaviors, and ideas.",
-    description: "Our strategists design pathways that help brands grow with clarity and confidence in an ever-changing landscape.",
-    image: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/21729903/821840_221853.png"
-  },
-  {
-    name: "Elena",
-    quote: "Creativity isn’t just what we do - it’s how we think.",
-    description: "From brand storytelling to experience design, our innovators craft narratives that inspire action and bring imagination to life.",
-    image: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/21729903/521402_608444.jpeg"
-  },
-  {
-    name: "Joela",
-    quote: "Numbers tell stories too.",
-    description: "Our analysts translate data into direction - uncovering insights that fuel strategy, measure impact, and keep our clients one step ahead.",
-    image: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/21729903/455893_26344.png"
-  }
-];
-
-const journeySteps = [
-  { 
-    date: "October 2, 2025", 
-    title: "Looking Ahead", 
-    content: "The world keeps evolving — and so do we. We are deepening our focus on human connection within technical industries like clean energy and med-tech." 
-  },
-  { 
-    date: "January 2025", 
-    title: "Milestones Achieved", 
-    content: "BrightLeaf Horizon is based in Denver, Colorado, and launched our first international partnership with Asymmetric Fund in Poland." 
-  },
-  { 
-    date: "March 2024", 
-    title: "Founding Principles", 
-    content: "BrightLeaf Horizon was founded on a simple but powerful idea: to empower brands with strategy and soul, ensuring that clarity and conscience can coexist." 
-  }
-];
-
 export default function AboutPage() {
   return (
-    <div className="bg-white">
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-slate-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">Empowering Sustainable Growth</h1>
-          <p className="text-lg text-slate-600 leading-relaxed mb-8">
-            At BrightLeaf Horizon, we help brands in architecture, healthcare, and clean energy grow with purpose — crafting strategies that are not only effective, but enduring.
-          </p>
-          <div className="flex justify-center gap-4">
-             <Link href="#journey" className="bg-amber-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-amber-700 transition shadow-md">Our Journey</Link>
-          </div>
-        </div>
+    <main className="container mx-auto py-12 px-4">
+      <h1 className="text-4xl font-bold mb-8">Who We Are</h1>
+      <p className="mb-8 text-lg">BrightLeaf Horizon is a brand strategy and digital growth agency. We help ambitious companies define their identity, build authority, and drive business growth from strategy to conversion.</p>
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold mb-4">What We Believe</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>Brands are built, not decorated</li>
+          <li>Perception drives value</li>
+          <li>Strategy comes before execution</li>
+        </ul>
       </section>
-
-      {/* Experts Section */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold mb-4">What Makes Us Different</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>Strategy-first approach</li>
+          <li>End-to-end system (positioning → conversion)</li>
+          <li>Focus on business outcomes</li>
+        </ul>
+      </section>
+      {/* Optional: Team / Founder story section can be added here */}
+    </main>
+  );
+}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Meet Our Experts</h2>
           <p className="text-slate-500 max-w-2xl mx-auto italic">A collective of strategists, storytellers, and analysts — united by the belief that great marketing begins with understanding.</p>

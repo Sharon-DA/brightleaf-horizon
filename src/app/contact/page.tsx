@@ -1,63 +1,19 @@
-"use client";
-
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import FormInput from "@/components/FormInput";
-import FormSelect from "@/components/FormSelect";
-import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css";
-import FormTextarea from "@/components/FormTextarea";
-import SuccessModal from "@/components/SuccessModal";
-
-interface ContactFormData {
-  fullName: string;
-  email: string;
-  phone: string;
-  companyName: string;
-  address: string;
-  preferredTime: string;
-  customDateTime?: string;
+export default function ContactPage() {
+  return (
+    <main className="container mx-auto py-20 px-4">
+      <h1 className="text-5xl font-bold mb-8">Start a Project</h1>
+      <p className="mb-10 text-lg">Tell us about your brand, your goals, and where you want to grow.</p>
+      <form className="max-w-xl mx-auto grid gap-6">
+        <input type="text" name="name" placeholder="Name" className="w-full p-4 rounded-lg border border-gray-200 focus:border-black focus:ring-1 focus:ring-black outline-none transition bg-white text-gray-900" required />
+        <input type="email" name="email" placeholder="Email" className="w-full p-4 rounded-lg border border-gray-200 focus:border-black focus:ring-1 focus:ring-black outline-none transition bg-white text-gray-900" required />
+        <input type="text" name="company" placeholder="Company" className="w-full p-4 rounded-lg border border-gray-200 focus:border-black focus:ring-1 focus:ring-black outline-none transition bg-white text-gray-900" />
+        <textarea name="message" placeholder="Message" rows={5} className="w-full p-4 rounded-lg border border-gray-200 focus:border-black focus:ring-1 focus:ring-black outline-none transition bg-white text-gray-900" required />
+        <button type="submit" className="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-slate-800 transition shadow-lg hover:shadow-xl active:scale-[0.98]">Send Message</button>
+      </form>
+      {/* Optional: Calendly/WhatsApp integration can be added here */}
+    </main>
+  );
 }
-
-const ContactPage = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-    watch,
-  } = useForm<ContactFormData>({
-    mode: "onBlur",
-    defaultValues: {
-      fullName: "",
-      email: "",
-      phone: "",
-      companyName: "",
-      address: "",
-      preferredTime: "",
-      customDateTime: "",
-    },
-  });
-
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState("");
-  const [phone, setPhone] = useState("");
-  const [phoneError, setPhoneError] = useState("");
-  const preferredTime = watch("preferredTime");
-
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  const onSubmit = async (data: ContactFormData) => {
-    setSubmitError("");
-
-    if (!phone) {
-      setPhoneError("Phone number is required");
-      return;
-    }
-
-    setPhoneError("");
-    setIsSubmitting(true);
 
     const finalData = {
       ...data,
