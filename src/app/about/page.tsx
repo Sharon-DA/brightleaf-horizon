@@ -31,7 +31,7 @@ const journeySteps = [
   { 
     date: "January 2025", 
     title: "Milestones Achieved", 
-    content: "Successfully established a regional presence in Denver, Colorado, and launched our first international partnership with Asymmetric Fund in Poland." 
+    content: "BrightLeaf Horizon is based in Denver, Colorado, and launched our first international partnership with Asymmetric Fund in Poland." 
   },
   { 
     date: "March 2024", 

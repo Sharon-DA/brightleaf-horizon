@@ -92,37 +92,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section id="cases" className="py-24 px-6 bg-white border-b border-gray-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-amber-600 font-semibold uppercase tracking-widest mb-4">Market Impact</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 tracking-tight">Real Results for Growing Enterprises</h2>
-            <p className="text-xl text-gray-600 italic max-w-2xl mx-auto">Specializing in high-growth companies (50-100 employees) and global funds.</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {cases.map((item, i) => (
-              <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:border-amber-400 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-slide-up" style={{animationDelay: `${0.1 + i * 0.1}s`}}>
-                <div className="flex justify-between items-start mb-4">
-                  <div className="text-4xl">{item.icon}</div>
-                  <span className="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded uppercase tracking-wider">
-                    {item.location}
-                  </span>
-                </div>
-                <span className="text-amber-600 font-bold text-xs uppercase tracking-widest mb-2">{item.category}</span>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">{item.title}</h3>
-                <p className="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">{item.description}</p>
-                
-                <div className="space-y-3 pt-6 border-t border-slate-100">
-                  <p className="text-xs text-slate-500"><strong>Challenge:</strong> {item.challenge}</p>
-                  <p className="text-xs text-slate-500"><strong>Approach:</strong> {item.approach}</p>
-                  <div className="mt-4 bg-amber-50 p-3 rounded-lg border border-amber-100">
-                    <p className="text-amber-700 font-bold text-center text-sm">{item.result}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+      {/* About Section - Unique Home Content */}
+      <section className="py-24 px-6 bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 tracking-tight">Why Brightleaf Horizon?</h2>
+          <p className="text-xl text-gray-700 mb-8">We are more than consultants—we are partners in your growth journey. Our team brings together strategists, technologists, and creatives to deliver holistic solutions that drive real business outcomes.</p>
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+            <div>
+              <h3 className="text-2xl font-bold text-amber-600 mb-2">Strategic Vision</h3>
+              <p className="text-gray-600">We help you see the big picture and chart a course for sustainable success in a competitive landscape.</p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-amber-600 mb-2">Technical Expertise</h3>
+              <p className="text-gray-600">Our experience in SaaS, cloud, and emerging technologies ensures your solutions are future-ready and robust.</p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-amber-600 mb-2">Creative Impact</h3>
+              <p className="text-gray-600">We craft compelling narratives and engaging experiences that connect with your audience and build lasting value.</p>
+            </div>
           </div>
         </div>
       </section>
