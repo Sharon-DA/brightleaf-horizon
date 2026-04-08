@@ -61,7 +61,8 @@ export default function RootLayout({
             <Link href="/" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Home</Link>
             <Link href="/about" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">About Us</Link>
             <Link href="/services" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Services</Link>
-            <Link href="/#contact" className="block bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium text-center">Contact</Link>
+            <Link href="/cases" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Case Studies</Link>
+            <Link href="/contact" className="block bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium text-center">Contact</Link>
           </nav>
         </header>
 
