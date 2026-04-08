@@ -25,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#1e293b" />
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' width='100' height='100'/><text x='50' y='70' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>BH</text></svg>" />
+        <link rel="icon" type="image/jpeg" href="/blh-logo.jpeg" />
       </head>
       <body className="bg-white text-gray-900 font-sans">
         {/* Sticky Header */}
