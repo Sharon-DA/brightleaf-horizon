@@ -120,24 +120,61 @@ export default function AboutPage() {
 
       {/* Social Media Links - Always Visible, Large, and Left-Aligned */}
       <footer className="py-12 px-6 bg-slate-900 border-t border-gray-900 mt-12">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
-          {/* Social Icons Left */}
-          <div className="flex flex-col items-start gap-4 w-full md:w-1/3">
-            <span className="text-white font-semibold text-lg mb-2">Connect with us:</span>
-            <div className="flex gap-8">
-              <a href="https://www.linkedin.com/company/brightleaf-horizon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white text-4xl">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.61 2.01 3.61 4.62v5.56z"/></svg>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=61587168273948" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white text-4xl">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.326v21.348c0 .733.592 1.326 1.325 1.326h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.326v-21.35c0-.734-.593-1.326-1.326-1.326z"/></svg>
-              </a>
-              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="text-white text-4xl">
-                <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M17.53 2.47a2.5 2.5 0 0 1 3.54 3.54l-4.88 4.88 4.88 4.88a2.5 2.5 0 0 1-3.54 3.54l-4.88-4.88-4.88 4.88a2.5 2.5 0 0 1-3.54-3.54l4.88-4.88-4.88-4.88a2.5 2.5 0 0 1 3.54-3.54l4.88 4.88 4.88-4.88z"/></svg>
-              </a>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-white font-bold text-xl mb-2">BrightLeaf Horizon</h3>
+            <p className="text-slate-300 text-sm">Strategic growth partners for visionary brands. Since 2024, we have translated market insights into compelling narratives that drive measurable impact.</p>
+          </div>
+          {/* Company Links */}
+          <div>
+            <h4 className="text-white font-bold mb-2">Company</h4>
+            <ul className="text-slate-300 space-y-1 text-sm">
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/#services">Services</Link></li>
+              <li><Link href="/#cases">Case Studies</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+            </ul>
+          </div>
+          {/* Connect Info */}
+          <div>
+            <h4 className="text-white font-bold mb-2">Connect</h4>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-pink-400 text-2xl">&#128222;</span>
+              <span className="text-slate-300 text-sm">303-521-6710</span>
+            </div>
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-purple-200 text-2xl">&#128231;</span>
+              <span className="text-slate-300 text-sm">brightleafhealth@brightleafh.com</span>
+            </div>
+            <div className="border-t border-slate-700 my-2"></div>
+            <div className="text-slate-400 text-xs font-bold mb-1">BUSINESS HOURS</div>
+            <div className="text-slate-300 text-xs">Mon-Fri: 10am – 5pm<br/>Sat: 1pm – 5pm</div>
+          </div>
+          {/* Location & Socials */}
+          <div>
+            <h4 className="text-white font-bold mb-2">Location</h4>
+            <div className="text-slate-300 text-sm mb-4">
+              <div className="font-semibold text-white">Denver Office</div>
+              1801 California St,<br/>Denver, CO 80202,<br/>United States
+            </div>
+            <div className="mt-4">
+              <span className="text-white font-semibold text-base mb-2 block">Connect with us:</span>
+              <div className="flex gap-4 mt-2">
+                <a href="https://www.linkedin.com/company/brightleaf-horizon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white text-4xl">
+                  <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.85-1.54 3.05 0 3.61 2.01 3.61 4.62v5.56z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61587168273948" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white text-4xl">
+                  <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.326v21.348c0 .733.592 1.326 1.325 1.326h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.326v-21.35c0-.734-.593-1.326-1.326-1.326z"/></svg>
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="text-white text-4xl">
+                  <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M17.53 2.47a2.5 2.5 0 0 1 3.54 3.54l-4.88 4.88 4.88 4.88a2.5 2.5 0 0 1-3.54 3.54l-4.88-4.88-4.88 4.88a2.5 2.5 0 0 1-3.54-3.54l4.88-4.88-4.88-4.88a2.5 2.5 0 0 1 3.54-3.54l4.88 4.88 4.88-4.88z"/></svg>
+                </a>
+              </div>
             </div>
           </div>
-          {/* ...existing footer content or empty space for layout symmetry... */}
         </div>
+        <div className="max-w-7xl mx-auto mt-8 text-center text-slate-400 text-xs border-t border-slate-800 pt-6">© 2024–2026 BrightLeaf Horizon. All rights reserved.</div>
       </footer>
     </div>
   );
