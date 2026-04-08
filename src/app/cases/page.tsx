@@ -33,31 +33,52 @@ const cases = [
 
 export default function CaseStudiesPage() {
   return (
-    <main className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold mb-6">Case Studies</h1>
-      <p className="mb-4">Explore how Brightleaf Horizon has delivered impactful solutions for our clients:</p>
-      <div className="grid md:grid-cols-3 gap-8">
-        {cases.map((item, i) => (
-          <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:border-amber-400 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="flex justify-between items-start mb-4">
-              <div className="text-4xl">{item.icon}</div>
-              <span className="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded uppercase tracking-wider">
-                {item.location}
+    <main className="bg-slate-50 min-h-screen">
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 px-6 bg-slate-900 text-white border-b border-slate-800">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-amber-400 font-bold tracking-widest uppercase mb-4 text-sm animate-slide-up">Our Work</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            Case Studies
+          </h1>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            Real impact across SaaS, Cloud Commerce, and Web3. Explore how Brightleaf Horizon has delivered powerful solutions for our clients.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8">
+          {cases.map((item, i) => (
+          <div key={i} className="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 flex flex-col hover:border-amber-400 hover:shadow-xl transition-all duration-300">
+            <div className="flex justify-between items-start mb-6">
+              <div className="text-5xl">{item.icon}</div>
+              <span className="text-[10px] font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full uppercase tracking-wider">
+                {item.category}
               </span>
             </div>
-            <span className="text-amber-600 font-bold text-xs uppercase tracking-widest mb-2">{item.category}</span>
             <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">{item.title}</h3>
-            <p className="text-slate-600 text-sm mb-6 grow leading-relaxed">{item.description}</p>
-            <div className="space-y-3 pt-6 border-t border-slate-100">
-              <p className="text-xs text-slate-500"><strong>Challenge:</strong> {item.challenge}</p>
-              <p className="text-xs text-slate-500"><strong>Approach:</strong> {item.approach}</p>
-              <div className="mt-4 bg-amber-50 p-3 rounded-lg border border-amber-100">
-                <p className="text-amber-700 font-bold text-center text-sm">{item.result}</p>
+            <p className="text-slate-600 text-sm mb-8 flex-grow leading-relaxed">{item.description}</p>
+            
+            <div className="space-y-4 pt-6 border-t border-slate-100">
+              <div>
+                <p className="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Challenge</p>
+                <p className="text-sm text-slate-600">{item.challenge}</p>
+              </div>
+              <div>
+                <p className="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Approach</p>
+                <p className="text-sm text-slate-600">{item.approach}</p>
+              </div>
+              <div className="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                <p className="text-amber-700 font-bold flex items-center justify-center text-sm text-center">
+                  ✨ {item.result}
+                </p>
               </div>
             </div>
           </div>
         ))}
       </div>
+      </section>
     </main>
   );
 }

@@ -11,39 +11,6 @@ type FormData = {
   message: string;
 };
 
-const cases = [
-  {
-    category: "SaaS & Cloud Solutions",
-    title: "DirectScale: Market Positioning",
-    location: "Denver, Colorado",
-    description: "As this cloud-platform scaled, they needed to move from a 'tool' to a 'strategic partner' for global direct-selling brands.",
-    challenge: "Defining a unique value proposition in a crowded legacy software market.",
-    approach: "SaaS narrative overhaul + enterprise-level content strategy.",
-    result: "Successfully positioned for high-value acquisition.",
-    icon: "☁️"
-  },
-  {
-    category: "Cloud Commerce",
-    title: "Pax8: Scale Strategy",
-    location: "Denver, Colorado",
-    description: "During their mid-market growth phase (50-100+ employees), we focused on simplifying complex cloud distribution narratives for IT professionals.",
-    challenge: "Rapidly expanding service catalog causing brand message dilution.",
-    approach: "Vertical-specific messaging + streamlined partner education.",
-    result: "Catalyzed growth leading to 'Unicorn' status.",
-    icon: "🚀"
-  },
-  {
-    category: "Venture Capital & Web3",
-    title: "Asymmetric Fund: Authority Building",
-    location: "Poland / Global",
-    description: "Establishing institutional authority and trust in the volatile liquid investment and crypto-asset space.",
-    challenge: "Building long-term credibility in a skeptical market.",
-    approach: "Deep-research content + risk-management focused voice.",
-    result: "Solidified status with multi-million AUM growth.",
-    icon: "📈"
-  }
-];
-
 export default function Home() {
   const { register, handleSubmit, reset } = useForm<FormData>();
 
@@ -113,6 +80,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Contact Section - FINAL POLISHED VERSION */}
       <section id="contact" className="py-24 px-6 bg-white">

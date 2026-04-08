@@ -43,8 +43,8 @@ export default function RootLayout({
             <nav className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-gray-700 hover:text-amber-600 transition font-medium">Home</Link>
               <Link href="/about" className="text-gray-700 hover:text-amber-600 transition font-medium">About Us</Link>
-              <Link href="/#services" className="text-gray-700 hover:text-amber-600 transition font-medium">Services</Link>
-              <Link href="/#cases" className="text-gray-700 hover:text-amber-600 transition font-medium">Case Studies</Link>
+              <Link href="/services" className="text-gray-700 hover:text-amber-600 transition font-medium">Services</Link>
+              <Link href="/cases" className="text-gray-700 hover:text-amber-600 transition font-medium">Case Studies</Link>
               <Link href="/contact" className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium">Contact</Link>
             </nav>
 
@@ -60,7 +60,7 @@ export default function RootLayout({
           <nav id="mobile-menu" className="hidden md:hidden bg-white border-t border-gray-200 py-4 px-6 space-y-3 animate-in fade-in">
             <Link href="/" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Home</Link>
             <Link href="/about" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">About Us</Link>
-            <Link href="/#services" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Services</Link>
+            <Link href="/services" className="block text-gray-700 hover:text-amber-600 transition font-medium py-2">Services</Link>
             <Link href="/#contact" className="block bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition font-medium text-center">Contact</Link>
           </nav>
         </header>
@@ -80,8 +80,8 @@ export default function RootLayout({
                 <h4 className="text-white font-semibold mb-4">Company</h4>
                 <ul className="space-y-2 text-sm">
                   <li><Link href="/about" className="hover:text-amber-400 transition">About Us</Link></li>
-                  <li><Link href="/#services" className="hover:text-amber-400 transition">Services</Link></li>
-                  <li><Link href="/#cases" className="hover:text-amber-400 transition">Case Studies</Link></li>
+                  <li><Link href="/services" className="hover:text-amber-400 transition">Services</Link></li>
+                  <li><Link href="/cases" className="hover:text-amber-400 transition">Case Studies</Link></li>
                   <li><Link href="/contact" className="hover:text-amber-400 transition">Contact</Link></li>
                 </ul>
               </div>
