@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 const experts = [
   {
-    name: "Elena",
+    name: "Atalia",
     quote: "We see beyond data points and trends - we connect dots between industries, behaviors, and ideas.",
     description: "Our strategists design pathways that help brands grow with clarity and confidence in an ever-changing landscape.",
     image: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/21729903/821840_221853.png"
   },
   {
-    name: "Atalia",
+    name: "Elena",
     quote: "Creativity isn’t just what we do - it’s how we think.",
     description: "From brand storytelling to experience design, our innovators craft narratives that inspire action and bring imagination to life.",
     image: "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/21729903/521402_608444.jpeg"
