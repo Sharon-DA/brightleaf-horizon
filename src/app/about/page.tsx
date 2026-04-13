@@ -23,20 +23,20 @@ const experts = [
 ];
 
 const journeySteps = [
-  { 
-    date: "October 2, 2025", 
-    title: "Looking Ahead", 
-    content: "The world keeps evolving — and so do we. We are deepening our focus on human connection within technical industries like clean energy and med-tech." 
+  {
+    date: "October 2, 2025",
+    title: "Looking Ahead",
+    content: "The world keeps evolving — and so do we. We are deepening our focus on human connection within technical industries like clean energy and med-tech."
   },
-  { 
-    date: "January 2025", 
-    title: "Milestones Achieved", 
-    content: "BrightLeaf Horizon is based in Denver, Colorado, and launched our first international partnership with Asymmetric Fund in Poland." 
+  {
+    date: "January 2025",
+    title: "Milestones Achieved",
+    content: "BrightLeaf Horizon is based in Denver, Colorado, and launched our first international partnership with Asymmetric Capital Partners in Portland."
   },
-  { 
-    date: "March 2024", 
-    title: "Founding Principles", 
-    content: "BrightLeaf Horizon was founded on a simple but powerful idea: to empower brands with strategy and soul, ensuring that clarity and conscience can coexist." 
+  {
+    date: "March 2024",
+    title: "Founding Principles",
+    content: "BrightLeaf Horizon was founded on a simple but powerful idea: to empower brands with strategy and soul, ensuring that clarity and conscience can coexist."
   }
 ];
 
@@ -51,7 +51,7 @@ export default function AboutPage() {
             At BrightLeaf Horizon, we help brands in architecture, healthcare, and clean energy grow with purpose — crafting strategies that are not only effective, but enduring.
           </p>
           <div className="flex justify-center gap-4">
-             <Link href="#journey" className="bg-amber-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-amber-700 transition shadow-md">Our Journey</Link>
+            <Link href="#journey" className="bg-amber-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-amber-700 transition shadow-md">Our Journey</Link>
           </div>
         </div>
       </section>
