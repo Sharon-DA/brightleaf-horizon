@@ -1,13 +1,15 @@
 const cases = [
   {
-    category: "SaaS & Cloud Solutions",
-    title: "DirectScale: Market Positioning",
-    location: "Denver, Colorado",
-    description: "As this cloud-platform scaled, they needed to move from a 'tool' to a 'strategic partner' for global direct-selling brands.",
-    challenge: "Defining a unique value proposition in a crowded legacy software market.",
-    approach: "SaaS narrative overhaul + enterprise-level content strategy.",
-    result: "Successfully positioned for high-value acquisition.",
-    icon: "☁️"
+    category: "Lash & Skincare",
+    title: "EL Beauty Station LLC",
+    location: "Aurora, Colorado",
+    description: "Premium lash, brow, and skincare services focused on high-fidelity beauty experiences. From luxury sets to precision brows, EL Beauty Station provides expert care with a 5-star reputation in Aurora.",
+    challenge: "Expanding brand visibility beyond social media to capture high-intent local bookings.",
+    approach: "Optimized booking integration via Fresha + high-impact visual strategy on Instagram.",
+    result: "Consistent month-over-month growth and top-rated status on booking platforms.",
+    icon: "💄",
+    url: "https://www.fresha.com/zh/lvp/el-beauty-station-llc-east-girard-avenue-aurora-a2nlzY",
+    socialUrl: "https://www.instagram.com/elbeautystationllc/"
   },
   {
     category: "Cloud Commerce",
@@ -74,6 +76,18 @@ export default function CaseStudiesPage() {
                   ✨ {item.result}
                 </p>
               </div>
+            </div>
+            <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-4">
+              {item.url && (
+                <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1.5 transition-colors">
+                  Book on Fresha ↗
+                </a>
+              )}
+              {item.socialUrl && (
+                <a href={item.socialUrl} target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-slate-500 hover:text-slate-700 flex items-center gap-1.5 transition-colors">
+                   Instagram ↗
+                </a>
+              )}
             </div>
           </div>
         ))}

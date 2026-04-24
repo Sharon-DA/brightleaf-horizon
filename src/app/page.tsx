@@ -13,14 +13,16 @@ type FormData = {
 
 const cases = [
   {
-    category: "SaaS & Cloud Solutions",
-    title: "DirectScale: Market Positioning",
-    location: "Denver, Colorado",
-    description: "As this cloud-platform scaled, they needed to move from a 'tool' to a 'strategic partner' for global direct-selling brands.",
-    challenge: "Defining a unique value proposition in a crowded legacy software market.",
-    approach: "SaaS narrative overhaul + enterprise-level content strategy.",
-    result: "Successfully positioned for high-value acquisition.",
-    icon: "☁️"
+    category: "Lash & Skincare",
+    title: "EL Beauty Station LLC",
+    location: "Aurora, Colorado",
+    description: "Premium lash, brow, and skincare services focused on high-fidelity beauty experiences. From luxury sets to precision brows, EL Beauty Station provides expert care with a 5-star reputation in Aurora.",
+    challenge: "Expanding brand visibility beyond social media to capture high-intent local bookings.",
+    approach: "Optimized booking integration via Fresha + high-impact visual strategy on Instagram.",
+    result: "Consistent month-over-month growth and top-rated status on booking platforms.",
+    icon: "💄",
+    url: "https://www.fresha.com/zh/lvp/el-beauty-station-llc-east-girard-avenue-aurora-a2nlzY",
+    socialUrl: "https://www.instagram.com/elbeautystationllc/"
   },
   {
     category: "Cloud Commerce",
